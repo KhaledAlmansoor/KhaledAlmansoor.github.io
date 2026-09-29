@@ -8,5 +8,5 @@ Live: https://khaledalmansoor.github.io/
 - Fonts: IBM Plex Sans, IBM Plex Sans Arabic, IBM Plex Mono (Google Fonts).
 - `cv/` holds the one-page CV in English and Arabic; the download buttons serve the one that matches the page language.
 - `og.png` is the link preview card for WhatsApp, X, and LinkedIn.
-- Links live in `LINKS` near the bottom of `index.html`; an empty link stays hidden. The contact form stays hidden until `FORM_KEY` (Web3Forms) is set.
+- Links live in `LINKS` near the bottom of `index.html`; an empty link stays hidden. The contact form sends through Web3Forms (`FORM_KEY`, a public key) to khaled-almansoor@outlook.com; with the key empty the form hides itself.
 - Previous design: git tag `v1`.
