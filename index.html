@@ -160,6 +160,7 @@
     transition: transform .2s ease, border-color .2s ease, color .2s ease;
   }
   .icon-btn:hover { transform: translateY(-2px); color: var(--violet); border-color: var(--violet); }
+  .ib-label { display: none; }
 
   /* Hero */
   .hero { position: relative; padding-top: clamp(130px, 16vw, 180px); isolation: isolate; }
@@ -409,14 +410,27 @@
     .about-grid, .contact-grid, .bento { grid-template-columns: minmax(0, 1fr); }
     .nav-cv-label { display: none; }
   }
+  @media (max-width: 640px) {
+    .hero { padding-top: 108px; }
+    .hero > .wrap { text-align: center; }
+    .hero-top { flex-direction: column; justify-content: center; gap: 14px; margin-bottom: 22px; }
+    .avatar { width: 116px; height: 116px; }
+    .rotator { margin-top: 20px; }
+    .lede { margin-inline: auto; }
+    .ctas { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 28px; }
+    .ctas .btn { width: 100%; padding: 14px 12px; white-space: nowrap; }
+    .icon-btn { width: 100%; height: auto; min-height: 50px; display: inline-flex; align-items: center; justify-content: center; gap: 10px; font-size: 15px; font-weight: 600; }
+    .ib-label { display: inline; }
+    .facts { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 36px; text-align: start; }
+    .fact { flex-direction: column; gap: 10px; padding: 16px; }
+    .fact strong { font-size: 14.5px; }
+  }
   @media (max-width: 560px) {
     body { font-size: 16px; }
     .brand span { display: none; }
-    .avatar { width: 96px; height: 96px; }
-    .facts, .principles, .edu-grid { grid-template-columns: minmax(0, 1fr); }
+    .principles, .edu-grid { grid-template-columns: minmax(0, 1fr); }
     .edu-grid .wide { grid-template-columns: auto minmax(0, 1fr); }
     .edu-grid .wide .pill { grid-column: 1 / -1; justify-self: start; }
-    .ctas .btn { flex: 1 1 auto; }
     .timeline { padding-inline-start: 26px; }
     .job .node { inset-inline-start: -27px; }
     .timeline::before { inset-inline-start: 7px; }
@@ -504,8 +518,8 @@
         <a class="btn btn-glass" href="mailto:khaled.almansoor61@icloud.com">
           <svg class="i" aria-hidden="true"><use href="#i-mail"/></svg><span data-i18n="hero.email">Email me</span>
         </a>
-        <a class="icon-btn" data-link="linkedin" href="#" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="i" aria-hidden="true"><use href="#i-linkedin"/></svg></a>
-        <a class="icon-btn" data-link="github" href="#" target="_blank" rel="noopener" aria-label="GitHub"><svg class="i" aria-hidden="true"><use href="#i-github"/></svg></a>
+        <a class="icon-btn" data-link="linkedin" href="#" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="i" aria-hidden="true"><use href="#i-linkedin"/></svg><span class="ib-label">LinkedIn</span></a>
+        <a class="icon-btn" data-link="github" href="#" target="_blank" rel="noopener" aria-label="GitHub"><svg class="i" aria-hidden="true"><use href="#i-github"/></svg><span class="ib-label">GitHub</span></a>
       </div>
 
       <div class="facts">
@@ -818,7 +832,7 @@
       'hero.focus': 'أركّز على',
       'hero.rot': ['مراقبة حركة الشبكة', 'فحص الثغرات', 'أمن الأجهزة الطرفية', 'الالتزام بالسياسات الأمنية'],
       'hero.lede': 'خريج أمن سيبراني بخبرة عملية في أمن الشبكات من بنك اليمن والكويت، ومتدرب حاليًا في DeepSafer بالرياض.',
-      'hero.cv': 'تحميل السيرة الذاتية', 'hero.email': 'راسلني',
+      'hero.cv': 'تحميل السيرة', 'hero.email': 'راسلني',
       'band.aria': 'رسم توضيحي: حزم بيانات تمر عبر نقطة فحص، ويُحظر المشبوه منها.',
       'band.in': 'وارد', 'band.blocked': 'محظور', 'band.inspect': 'فحص', 'band.out': 'آمن',
       'f1.k': 'التركيز', 'f1.v': 'حماية الشبكات',
