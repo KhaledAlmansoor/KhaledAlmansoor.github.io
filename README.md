@@ -9,4 +9,4 @@ Live: https://khaledalmansoor.github.io/
 - `cv/` holds the one-page CV in English and Arabic; the download buttons serve the one that matches the page language.
 - `og.png` is the link preview card for WhatsApp, X, and LinkedIn.
 - Links live in `LINKS` near the bottom of `index.html`; an empty link stays hidden. The contact form sends through Web3Forms (`FORM_KEY`, a public key) to khaled-almansoor@outlook.com; with the key empty the form hides itself.
-- Previous designs: git tags `v1` (light editorial) and `v2-color` (colorful light).
+- Previous designs: git tags `v1` (light editorial), `v2-color` (colorful light), `v2-pro` (clean single blue).
