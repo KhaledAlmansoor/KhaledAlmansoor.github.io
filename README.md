@@ -1,6 +1,6 @@
 # Khaled Almansoor
 
-Personal site of Khaled Adel Almansoor, cybersecurity graduate focused on network defense.
+Personal site of Khaled Adel Almansoor, cybersecurity graduate focused on cyber defense.
 
 Live: https://khaledalmansoor.github.io/
 
